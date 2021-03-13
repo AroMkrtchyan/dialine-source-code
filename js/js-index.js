@@ -6,15 +6,15 @@ $(document).ready(function() {
     });
 // popup hide end
 
-    <!-- user sity -->
+    <!-- user city -->
     $.get("https://ipinfo.io", function (response) {
         if (response.country === 'RU') {
-            $(".sity").html(response.sity);
+            $(".city").html("России");
         }else {
-            $(".sity").html("Страны СНГ");
+            $(".city").html("Страны СНГ");
         }
     }, "jsonp");
-    <!-- user sity end -->
+    <!-- user city end -->
 
     // day start
     let day = new Date();
